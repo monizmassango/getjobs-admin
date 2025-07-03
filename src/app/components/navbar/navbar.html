@@ -1,0 +1,29 @@
+<nav class="flex items-center justify-between bg-white rounded-2xl px-8 py-4 shadow-sm">
+  <div class="flex items-center">
+    <span class="text-2xl font-bold">
+      <span class="text-red-600">Get</span><span class="text-gray-900">Jobs</span>
+    </span>
+  </div>
+  <div class="flex items-center gap-6 relative">
+    <button
+      class="relative flex items-center justify-center w-14 h-10 bg-gray-100 rounded-full hover:bg-gray-200 transition">
+      <span class="material-icons text-gray-700 text-2xl">notifications</span>
+      <span class="absolute top-2 right-4 w-2.5 h-2.5 bg-red-600 rounded-full border-2 border-white"></span>
+    </button>
+    <div class="w-12 h-12 border border-gray-300 rounded-full bg-white"></div>
+    <button class="flex items-center" (click)="toggleDropdown($event)">
+      <span class="text-gray-400 text-lg ml-[-12px]">&#9662;</span>
+    </button>
+    <!-- Dropdown Menu -->
+    @if (dropdownOpen) {
+    <div class="absolute right-0 top-16 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 z-50"
+      (click)="$event.stopPropagation()">
+      <a href="#" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Profile</a>
+      <a href="#" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Password</a>
+      <a href="#" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Settings</a>
+      <div class="border-t border-gray-200"></div>
+      <a href="#" class="block px-6 py-3 text-red-600 hover:bg-gray-100">Logout</a>
+    </div>
+    }
+  </div>
+</nav>

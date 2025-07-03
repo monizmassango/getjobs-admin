@@ -1,0 +1,270 @@
+<div class="min-h-screen bg-gray-50">
+  <!-- Navbar -->
+  <div class="px-4 pt-4">
+    <app-navbar></app-navbar>
+  </div>
+  <!-- Main layout: sidenav + content -->
+  <div class="flex mx-auto px-4 pt-6">
+    <!-- Sidenav -->
+    <div class="mr-6">
+      <app-sidenav></app-sidenav>
+    </div>
+    <!-- Main content area -->
+    <main class="flex-1">
+      <!-- Page header -->
+      <!-- <div class="rounded-2xl shadow-sm px-8 py-6 mb-6"> -->
+      <h1 class="text-2xl font-bold mb-2">Dashboard</h1>
+      <div class="flex border-b border-gray-200 mb-4">
+        <button
+          class="py-2 px-4 text-red-600 font-semibold border-b-2 border-red-600 focus:outline-none">Overview</button>
+        <button class="py-2 px-4 text-gray-500 font-semibold">Reportes</button>
+      </div>
+      <!-- Add your dashboard widgets/components here -->
+      <div class="text-gray-400 mt-4">
+        <!-- Steps Row -->
+        <h2 class="text-2xl text-start font-bold mb-6">Vamos começar...</h2>
+        <div class="flex gap-4 mb-8">
+          <div class="flex gap-6">
+            <div class="flex-1 bg-white text-start rounded-xl shadow px-6 py-4 flex flex-col justify-center">
+              <span class="text-xs bg-[#EAF0F3] text-[#356C87] px-3 py-1 rounded mb-2 w-max">• Primeiro passo</span>
+              <span class="font-medium text-gray-700">Informações da Empresa</span>
+            </div>
+            <div class="flex-1 text-start bg-white rounded-xl shadow px-6 py-4 flex flex-col justify-center">
+              <span class="text-xs bg-[#EAF0F3] text-[#356C87] px-3 py-1 rounded mb-2 w-max">• Segundo passo</span>
+              <span class="font-medium text-gray-700">Informações de Contato</span>
+            </div>
+            <div class="flex-1 text-start bg-white rounded-xl shadow px-6 py-4 flex flex-col justify-center">
+              <span class="text-xs bg-[#EAF0F3] text-[#356C87] px-3 py-1 rounded mb-2 w-max">• Terceiro passo</span>
+              <span class="font-medium text-gray-700">Sobre a Empresa</span>
+            </div>
+            <div class="flex-1 text-start bg-[#779AAB] rounded-xl shadow px-6 py-4 flex flex-col justify-center">
+              <span class="text-xs bg-white text-[#356C87] px-3 py-1 rounded mb-2 w-max">• Quarto passo</span>
+              <span class="font-medium text-white">Publicar vaga</span>
+            </div>
+          </div>
+        </div>
+        <!-- Summary Section -->
+        <div class="mb-8">
+          <h2 class="text-xl text-start font-bold mb-2">Sumário</h2>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-medium text-gray-700">Contabilista Senior</span>
+            <mat-icon class="text-gray-400 text-base cursor-pointer">expand_more</mat-icon>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-xl shadow px-6 py-4 flex flex-col justify-between min-w-[280px] max-w-xs">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-800 text-base">Total de candidaturas</span>
+                <!-- Circular progress indicator -->
+                <svg class="w-10 h-10" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="16" fill="none" stroke="#A0A7AC" stroke-width="3" />
+                  <path d="M36 20
+           a 16 16 0 1 1 -4.69 -11.31" fill="none" stroke="#E53935" stroke-width="3" stroke-linecap="round" />
+                  <text x="20" y="23" text-anchor="middle" class="fill-gray-400 text-xs" font-size="12">-20%</text>
+                </svg>
+              </div>
+              <div class="text-3xl font-bold text-gray-900 mb-1">4273</div>
+              <div class="flex items-center gap-1 text-xs text-red-600">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 16 16">
+                  <path d="M2 10l4-4 4 4 4-4" />
+                </svg>
+                <span>-10.2%</span>
+                <span class="text-gray-400">em relação ao mês anterior</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow px-6 py-4 flex flex-col justify-between min-w-[280px] max-w-xs">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-800 text-base">Total de candidaturas</span>
+                <!-- Circular progress indicator -->
+                <svg class="w-10 h-10" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="16" fill="none" stroke="#A0A7AC" stroke-width="3" />
+                  <path d="M36 20
+           a 16 16 0 1 1 -4.69 -11.31" fill="none" stroke="#E53935" stroke-width="3" stroke-linecap="round" />
+                  <text x="20" y="23" text-anchor="middle" class="fill-gray-400 text-xs" font-size="12">-20%</text>
+                </svg>
+              </div>
+              <div class="text-3xl font-bold text-gray-900 mb-1">4273</div>
+              <div class="flex items-center gap-1 text-xs text-red-600">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 16 16">
+                  <path d="M2 10l4-4 4 4 4-4" />
+                </svg>
+                <span>-10.2%</span>
+                <span class="text-gray-400">em relação ao mês anterior</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow px-6 py-4 flex flex-col justify-between min-w-[280px] max-w-xs">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-800 text-base">Total de candidaturas</span>
+                <!-- Circular progress indicator -->
+                <svg class="w-10 h-10" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="16" fill="none" stroke="#A0A7AC" stroke-width="3" />
+                  <path d="M36 20
+           a 16 16 0 1 1 -4.69 -11.31" fill="none" stroke="#E53935" stroke-width="3" stroke-linecap="round" />
+                  <text x="20" y="23" text-anchor="middle" class="fill-gray-400 text-xs" font-size="12">-20%</text>
+                </svg>
+              </div>
+              <div class="text-3xl font-bold text-gray-900 mb-1">4273</div>
+              <div class="flex items-center gap-1 text-xs text-red-600">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 16 16">
+                  <path d="M2 10l4-4 4 4 4-4" />
+                </svg>
+                <span>-10.2%</span>
+                <span class="text-gray-400">em relação ao mês anterior</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow px-6 py-4 flex flex-col justify-between min-w-[280px] max-w-xs">
+              <div class="flex justify-between items-start mb-2">
+                <span class="font-semibold text-gray-800 text-base">Total de candidaturas</span>
+                <!-- Circular progress indicator -->
+                <svg class="w-10 h-10" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="16" fill="none" stroke="#A0A7AC" stroke-width="3" />
+                  <path d="M36 20
+           a 16 16 0 1 1 -4.69 -11.31" fill="none" stroke="#E53935" stroke-width="3" stroke-linecap="round" />
+                  <text x="20" y="23" text-anchor="middle" class="fill-gray-400 text-xs" font-size="12">-20%</text>
+                </svg>
+              </div>
+              <div class="text-3xl font-bold text-gray-900 mb-1">4273</div>
+              <div class="flex items-center gap-1 text-xs text-red-600">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 16 16">
+                  <path d="M2 10l4-4 4 4 4-4" />
+                </svg>
+                <span>-10.2%</span>
+                <span class="text-gray-400">em relação ao mês anterior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm px-8 py-6">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Chart & Table Section -->
+          <div class="flex-1 flex flex-col">
+            <!-- Chart -->
+            <div>
+              <div class="font-bold mb-4">Estatísticas das aplicações activas</div>
+              <div class="h-max w-full bg-gray-100 rounded flex items-center justify-center text-gray-400 mb-6">
+                <app-chart class="h-full w-full"></app-chart>
+              </div>
+            </div>
+            <!-- Table -->
+            <div class="overflow-x-auto">
+              <table class="min-w-full">
+                <thead>
+                  <tr class="border-b">
+                    <th class="py-3 px-2 text-left font-bold">Nome</th>
+                    <th class="py-3 px-2 text-left font-bold">Vaga</th>
+                    <th class="py-3 px-2 text-left font-bold">data</th>
+                    <th class="py-3 px-2 text-left font-bold">Estado</th>
+                    <th class="py-3 px-2 text-left font-bold">Acção</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b">
+                    <td class="py-3 px-2 flex items-center gap-2">
+                      <span class="w-8 h-8 rounded-full border border-gray-300 inline-block"></span>
+                      <div>
+                        <div class="font-medium">John Doe</div>
+                        <div class="text-xs text-gray-400">johndoe&#64;email.com</div>
+                      </div>
+                    </td>
+                    <td class="py-3 px-2">TechMoz Lda Desenvolvedor React Senior</td>
+                    <td class="py-3 px-2">20/05/2025</td>
+                    <td class="py-3 px-2">
+                      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">Aguardando
+                        entrevista</span>
+                    </td>
+                    <td class="py-3 px-2 text-center">
+                      <span class="material-icons text-gray-400 cursor-pointer">visibility</span>
+                    </td>
+                  </tr>
+                  <!-- Repeat <tr> for more rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Calendar & Agenda Section -->
+          <div class="w-full lg:w-96 flex-shrink-0 flex flex-col gap-6">
+            <!-- Calendar -->
+            <div>
+              <div class="font-bold mb-4">Minha agenda</div>
+              <div class="flex items-center justify-between mb-2">
+                <button class="text-gray-400">&lt;</button>
+                <span class="font-semibold">Maio</span>
+                <button class="text-gray-400">&gt;</button>
+              </div>
+              <div class="grid grid-cols-7 gap-1 text-center text-xs text-gray-400 mb-2">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sab</div>
+              </div>
+              <div class="grid grid-cols-7 gap-1 text-center text-sm mb-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div class="bg-blue-100 text-blue-700 rounded-full">20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+                <div>31</div>
+              </div>
+            </div>
+            <!-- Agenda -->
+            <div>
+              <ul class="text-sm text-gray-700 space-y-4">
+                <li>
+                  <span class="font-semibold">Quinta-feira 22, Maio 2025</span><br>
+                  Contabilista Senior<br>
+                  <span class="text-xs text-gray-500">Avaliar Curriculum</span>
+                </li>
+                <li>
+                  <span class="font-semibold">Segunda-feira 02, Junho 2025</span><br>
+                  Contabilista Senior<br>
+                  <span class="text-xs text-gray-500 font-bold">Início das entrevistas</span>
+                </li>
+                <li>
+                  <span class="font-semibold">Segunda-feira 06, Junho 2025</span><br>
+                  Contabilista Senior<br>
+                  <span class="text-xs text-gray-500 font-bold">Fim das entrevistas</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </main>
+  </div>
+</div>
